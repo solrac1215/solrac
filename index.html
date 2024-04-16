@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Introduction</title>
+  </head>
+  <body>
+    <div class="container-fluid p-5 bg-success text-dark text-center">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="Images/1_i8hFU86TqfhC0W28083U2w.png"
+            alt="abstract"
+            class="d-block"
+            style="width: 100%"
+            height="400px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/images.png"
+            alt="abstract"
+            class="d-block"
+            style="width: 100%"
+            height="400px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/provide-you-with-unique-patterns-for-you-to-use.jpg"
+            alt="abstract"
+            class="d-block"
+            style="width: 100%"
+            height="400px"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- end of carousell -->
+
+    <div class="container-fluid bg-success">
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>Web Development</h3>
+          <p>
+            Web development refers to the process of creating, designing, and
+            maintaining websites. It involves various aspects such as coding,
+            web design, content creation, and website management to ensure a
+            functional, user-friendly, and visually appealing online presence.
+            Web developers use a combination of front-end and back-end
+            technologies, including HTML, CSS, JavaScript, and server-side
+            languages like PHP or Python, to build websites that can be accessed
+            through the internet. The ultimate goal of web development is to
+            provide an optimal user experience, ensuring websites are
+            accessible, responsive, and compatible with different devices and
+            browsers.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h3>Graphic Design</h3>
+          <p>
+            Graphic design is a creative and artistic field that involves the
+            creation of visual content, including images, illustrations, and
+            typography, to convey ideas, messages, or information. It
+            encompasses various mediums such as print, digital, and multimedia
+            platforms. Graphic designers use their skills in visual arts, design
+            principles, and technology to produce eye-catching and effective
+            designs for a wide range of applications, including logos, websites,
+            advertisements, packaging, and publications. Their primary goal is
+            to communicate a clear and compelling message to the target audience
+            while maintaining aesthetic appeal and adhering to the client's
+            brand identity.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h3>Video Editing</h3>
+          <p>
+            Video editing is the process of assembling, organizing, and
+            manipulating various video clips, images, and audio files to create
+            a polished, cohesive, and visually appealing final product. This
+            creative task involves the use of specialized software and tools to
+            cut, trim, splice, and enhance the video and audio elements, as well
+            as adding special effects, transitions, and titles. A skilled video
+            editor can transform raw footage into a compelling narrative,
+            ensuring that the final video effectively communicates its intended
+            message or story. This process requires a keen eye for detail,
+            strong technical skills, and a good understanding of storytelling
+            and visual communication principles. Video editing is an essential
+            part of the filmmaking, television production, and digital content
+            creation industries, playing a crucial role in shaping the overall
+            impact and quality of the final product.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h3>3D Animation</h3>
+          <p>
+            Video editing is the process of assembling, organizing, and
+            manipulating various video clips, images, and audio files to create
+            a polished, cohesive, and visually appealing final product. This
+            creative task involves the use of specialized software and tools to
+            cut, trim, splice, and enhance the video and audio elements, as well
+            as adding special effects, transitions, and titles. A skilled video
+            editor can transform raw footage into a compelling narrative,
+            ensuring that the final video effectively communicates its intended
+            message or story. This process requires a keen eye for detail,
+            strong technical skills, and a good understanding of storytelling
+            and visual communication principles. Video editing is an essential
+            part of the filmmaking, television production, and digital content
+            creation industries, playing a crucial role in shaping the overall
+            impact and quality of the final product.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+          <div class="container mt-3">
+            <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p>
+            <div class="card" style="width: 400px">
+              <img
+                class="card-img-top"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. John Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">John Doe</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Engineer</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title">Jane Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. Jane Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Modal body..</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="card-img-bottom"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="container mt-3">
+            <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p>
+            <div class="card" style="width: 400px">
+              <img
+                class="card-img-top"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. John Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Modal body..</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title">Jane Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. Jane Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Modal body..</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="card-img-bottom"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="container mt-3">
+            <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p>
+            <div class="card" style="width: 400px">
+              <img
+                class="card-img-top"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. John Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Modal body..</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title">Jane Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. Jane Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Modal body..</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="card-img-bottom"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="container mt-3">
+            <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p>
+            <div class="card" style="width: 400px">
+              <img
+                class="card-img-top"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. John Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Modal body..</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+  
+            <div class="card" style="width: 400px">
+              <div class="card-body">
+                <h4 class="card-title">Jane Doe</h4>
+                <p class="card-text">
+                  Some example text some example text. Jane Doe is an architect
+                  and engineer
+                </p>
+                <div class="container mt-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    See Profile
+                  </button>
+                </div>
+  
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body">Modal body..</div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="card-img-bottom"
+                src="Images/pfp.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998"
+              href="https://www.facebook.com/"
+              role="button"
+              ><i class="fa-brands fa-facebook"></i></i
+            ></a>
+  
+            <!-- Twitter -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+  
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+  
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+  
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+  
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2024 Copyright:
+          <a class="text-body" href="#">Audencialdesigns</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
+  
